@@ -14,28 +14,32 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color(0xff4874fc),
           appBar: AppBar(
               elevation: 0,
-              leading: Container(
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color.fromARGB(159, 156, 185, 224)),
-                child: Center(
-                  child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
+              leading: Padding(
+                padding: const EdgeInsets.all(7.0),
+                child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color.fromARGB(159, 156, 185, 224)),
+                      child: Center(
+                          child: Icon(
                         Icons.info,
                       )),
-                ),
+                    )),
               ),
               backgroundColor: Color(0xff4874fc),
               actions: [
-                Container(
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color.fromARGB(159, 156, 185, 224)),
-                    child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Icon(Icons.insert_drive_file_sharp,
-                            color: Colors.white)))
+                Padding(
+                    padding: const EdgeInsets.all(7.0),
+                    child: Container(
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color.fromARGB(159, 156, 185, 224)),
+                        child: Padding(
+                            padding: const EdgeInsets.all(7.0),
+                            child: Icon(Icons.insert_drive_file_sharp,
+                                color: Colors.white))))
               ]),
           body: Center(
             child: Column(
